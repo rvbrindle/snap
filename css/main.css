@@ -12,5 +12,35 @@ body {
   padding: 3rem;
   box-sizing: border-box; }
 
-.foot {
-  background-color: red; }
+.card {
+  position: absolute;
+  width: 20rem;
+  height: 30rem;
+  background-color: #f5f4cb;
+  display: block;
+  border-radius: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+  .card__front {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    border-radius: inherit;
+    z-index: 1; }
+  .card__back {
+    width: 85%;
+    height: 90%;
+    position: fixed;
+    background-image: linear-gradient(to right, #3b69ff, #a1b7ff);
+    border-radius: inherit;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0; }
+
+.game-board {
+  width: 100%;
+  height: 600px;
+  background-color: green;
+  position: relative; }
